@@ -16,6 +16,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
     @GetMapping("/details")
     public ResponseEntity<?> getUserInfo() {
         return ResponseEntity.ok(userService.getUser());
